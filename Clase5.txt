@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "lib.h"
+#define NUMEROS 10
+
+int main()
+{
+    int i;
+    int arrayEnteros[NUMEROS];
+    int auxiliar;
+    //int b;
+
+    for(i = 0;i < NUMEROS;i++)
+    {
+        printf("Ingrese un numero: ");
+        scanf("%d", &auxiliar);
+        arrayEnteros[i] = auxiliar;
+    }
+        mostrarArray(arrayEnteros,NUMEROS);
+    //for(b=0;b < NUMEROS; b++)
+   // {
+   //     printf("\n%d",arrayEnteros[b]);
+  //  }
+
+    return 0;
+}
+/** Pedir 10 numeros usando get.int , esos 10 numeros en vez de procesarlos guardarlos en el
+ *  ARRAY ( hacerlo en el Main ) y mostrar el array en un funcion indicando
+ *  el limite para que no se pase del array
+ *
+ *
+ *
+ */
+
+
+
+
+
+
+
+int mostrarArray(int* Array,int cantidad);
+
+
+
+
+
+int mostrarArray(int* array,int NUMEROS)
+{
+    int retorno = -1;
+    int i;
+    if(NUMEROS > 0)
+    {
+        retorno = 0;
+
+        for(i=0; i < NUMEROS;i++)
+        {
+            printf("\n%d", array[i]);
+        }
+    }
+
+    return retorno;
+}
